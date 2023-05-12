@@ -3,6 +3,8 @@ import Menu from "@/components/template/Menu";
 import MenuItem from "@/components/template/MenuItem";
 import Pagina from "@/components/template/Pagina";
 import {
+  IconArrowMoveDown,
+  IconArrowMoveUp,
   IconArrowsDiff,
   IconClick,
   IconClock,
@@ -65,6 +67,7 @@ export default function Home() {
           >
             Componente Simples
           </MenuItem>
+
           <MenuItem
             className="bg-gradient-to-r from-cyan-500 to-red-500"
             icone={<IconH1 />}
@@ -72,6 +75,7 @@ export default function Home() {
           >
             Componente Básico
           </MenuItem>
+
           <MenuItem
             className="bg-gradient-to-r from-cyan-500 to-red-500"
             icone={<IconClick />}
@@ -79,12 +83,29 @@ export default function Home() {
           >
             Eventos
           </MenuItem>
+
           <MenuItem
             className="bg-gradient-to-r from-cyan-500 to-red-500"
             icone={<IconSitemap />}
             url="examples/filhos"
           >
             Filhos
+          </MenuItem>
+
+          <MenuItem
+            className="bg-gradient-to-r from-cyan-500 to-red-500"
+            icone={<IconArrowMoveDown />}
+            url="examples/direta"
+          >
+            Comunicação Direta
+          </MenuItem>
+
+          <MenuItem
+            className="bg-gradient-to-r from-cyan-500 to-red-500"
+            icone={<IconArrowMoveUp />}
+            url="examples/indireta"
+          >
+            Comunicação Indireta
           </MenuItem>
         </Linha>
       </Menu>
